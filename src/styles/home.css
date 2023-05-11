@@ -13,10 +13,55 @@ html, body, #content {
     justify-content: center;
 }
 
-#header {
+#header, #footer {
     height: 8%;
-    background-color: rgba(0,0,0,0.5); /* semi-transparent black */
+    background-color: rgba(0,0,0,0.7); /* semi-transparent black */
+}
+
+#header {
     margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#tab_container {
+    width: fit-content;
+}
+
+#home_tab,
+#prices_tab,
+#about_tab {
+    background-color: #fff;
+    opacity: 0.8;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-grow: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+#home_tab:hover,
+#prices_tab:hover,
+#about_tab:hover {
+    background-color: #ddd;
+}
+
+#home_tab.active,
+#prices_tab.active,
+#about_tab.active {
+    background-color: #aaa;
+}
+
+#footer {
+    margin-top: 5%;
 }
 
 #container {
@@ -25,10 +70,13 @@ html, body, #content {
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    background-color: rgba(0,0,0,0.5); /* semi-transparent black */
+    background-color: rgba(0,0,0,0.7); /* semi-transparent black */
     z-index: 1;
     border-radius: 50px;
+    padding: 3%;
+    margin: 3%;
 }
 
 #container > img {
@@ -43,13 +91,45 @@ html, body, #content {
     justify-content: center;
 }
 
-#text_container > h1, #text_container > h3 {
+#text_container > h1, 
+#text_container > h3, 
+.days_and_hours > h3,
+#hours_container > h2,
+#location_container > * {
     font-weight: bold;
     color: #fff;
-    opacity: 0.8;
+    opacity: 0.9;
+}
+
+#phone_number {
+    margin: 0;
 }
 
 #text_container > h1 {
     letter-spacing: 5px;
     margin-bottom: 0;
 }
+
+#hours_container,
+#location_container {
+    border: 1px solid rgba(255,255,255,0.8);
+    border-radius: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.days_and_hours {
+    display: flex;
+    justify-content: space-between;
+}
+
+.days_and_hours > *,
+#location_container > * {
+    margin: .5rem;
+}
+
+
