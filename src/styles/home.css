@@ -95,7 +95,10 @@ html, body, #content {
 #text_container > h3, 
 .days_and_hours > h3,
 #hours_container > h2,
-#location_container > * {
+#location_container > *,
+#contact_container > *,
+#haircut_container_div > *,
+#shave_container_div > * {
     font-weight: bold;
     color: #fff;
     opacity: 0.9;
@@ -111,7 +114,10 @@ html, body, #content {
 }
 
 #hours_container,
-#location_container {
+#location_container,
+#contact_container,
+#haircut_container_div,
+#shave_container_div {
     border: 1px solid rgba(255,255,255,0.8);
     border-radius: 20px;
     padding-left: 5%;
@@ -122,13 +128,18 @@ html, body, #content {
     align-items: center;
 }
 
-.days_and_hours {
+.days_and_hours,
+.haircut_and_price,
+.shave_and_price {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .days_and_hours > *,
-#location_container > * {
+#location_container > *,
+.haircut_and_price > *,
+.shave_and_price > * {
     margin: .5rem;
 }
 
