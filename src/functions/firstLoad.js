@@ -13,6 +13,15 @@ const firstLoad = function() {
     document.body.style.backgroundImage = 'url(' + background_image + ')';
     document.body.style.backgroundSize = 'cover';
     document.body.style.backgroundAttachment = 'fixed';
+
+    const background = document.createElement("div");
+    background.id = "background";
+    content.appendChild(background);
+
+    // main container for the page
+    const container = document.createElement("div");
+    container.id = "container";
+    background.appendChild(container);
     
     home();
 

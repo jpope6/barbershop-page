@@ -1,17 +1,6 @@
 import logo_img from "../assets/images/obc-logo-transparent.png";
 
 const home = function() {
-    const content = document.querySelector('#content');
-
-    const background = document.createElement("div");
-    background.id = "background";
-    content.appendChild(background);
-
-    // main container for the page
-    const container = document.createElement("div");
-    container.id = "container";
-    background.appendChild(container);
-
     //logo goes inside the main container
     const logo = document.createElement("img");
     logo.src = logo_img;
