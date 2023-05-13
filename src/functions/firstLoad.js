@@ -5,6 +5,7 @@ import footerDiv from "../pages/footer";
 
 const firstLoad = function() {
     const content = document.querySelector("#content");
+    content.innerHTML = ''
 
     const header = headerDiv();
     content.append(header);
@@ -27,7 +28,6 @@ const firstLoad = function() {
 
     const footer = footerDiv();
     content.append(footer)
-
 }
 
 export default firstLoad;

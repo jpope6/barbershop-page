@@ -1,4 +1,5 @@
 import logo_img from "../assets/images/obc-logo-transparent.png";
+import render from "../functions/render";
 
 const home = function() {
     const container = document.querySelector('#container');

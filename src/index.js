@@ -25,5 +25,3 @@ aboutButton.addEventListener('click', function() {
   render();
   contact();
 })
-
-
