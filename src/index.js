@@ -3,6 +3,7 @@ import firstLoad from "./functions/firstLoad";
 import render from "./functions/render";
 import home from "./pages/home";
 import prices from "./pages/prices";
+import contact from "./pages/contact";
 
 firstLoad();
 
@@ -22,5 +23,6 @@ pricesButton.addEventListener('click', function() {
 
 aboutButton.addEventListener('click', function() {
   render();
+  contact();
 })
 

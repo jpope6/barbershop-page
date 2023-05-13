@@ -19,7 +19,7 @@ const headerDiv = function() {
 
     const about_tab = document.createElement('button');
     about_tab.id = 'about_tab';
-    about_tab.textContent = 'About Us'
+    about_tab.textContent = 'Contact Us'
     tab_container.appendChild(about_tab);
 
     // Add event listeners to each of the tabs
